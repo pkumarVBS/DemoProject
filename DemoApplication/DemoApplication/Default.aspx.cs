@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,17 @@ namespace DemoApplication
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+        public string createFolder()
+        {
+            string folderlocation = "C://" + DateTime.Now.ToString("MMddyyyy");
+
+            if (!Directory.Exists(folderlocation))
+            {
+                // Try to create the directory.
+                Directory.CreateDirectory(folderlocation);
+            }
+            return folderlocation;
         }
     }
 }
