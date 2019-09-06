@@ -21,7 +21,7 @@ namespace DemoApplication
             if (!Directory.Exists(folderlocation))
             {
                 // Try to create the directory.
-                
+                Directory.CreateDirectory(folderlocation);
             }
             return folderlocation;
         }
