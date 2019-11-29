@@ -3,3 +3,7 @@
 ################################################################################
 
 /DemoApplication/DemoApplication/DemoApplication.csproj.user
+/DemoApplication/.vs/config/applicationhost.config
+/.vs/VSWorkspaceState.json
+/.vs/ProjectSettings.json
+/.vs/slnx.sqlite
